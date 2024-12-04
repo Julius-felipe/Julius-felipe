@@ -1,0 +1,92 @@
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling untuk header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling untuk main content */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Membuat elemen dalam main bisa membungkus ke baris baru */
+    justify-content: space-between; /* Memberi jarak antar elemen */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Styling untuk section dan article */
+section {
+    flex: 1 1 30%; /* Setiap section akan mengambil ruang 30% */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+article img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto;
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dan teks */
+}
+
+/* Menghapus margin kanan pada section terakhir */
+section:last-child {
+    margin-right: 0;
+}
+
+/* Styling untuk aside */
+aside {
+    flex: 1 1 30%; /* Flexbox untuk aside, dengan ukuran 30% */
+    padding: 20px;
+    background-color: #ddd;
+    margin-left: 20px;
+}
+
+aside img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto;
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dan teks */
+}
+
+/* Menghapus margin kiri pada aside pertama */
+aside:first-child {
+    margin-left: 0;
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
